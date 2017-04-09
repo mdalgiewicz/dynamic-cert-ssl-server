@@ -22,6 +22,7 @@ public class BookController {
 
     @RequestMapping(value = "/all", method = RequestMethod.GET)
     public ResponseEntity<Collection<Book>> allBook() {
+        System.out.println("Incoming request...");
         return new ResponseEntity<>(bookService.getAllBook(), HttpStatus.OK);
     }
 }

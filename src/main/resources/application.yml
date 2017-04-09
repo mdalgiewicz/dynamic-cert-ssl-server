@@ -1,2 +1,9 @@
 server:
-  port: 8082
+  port: 8443
+  ssl:
+    "key-store" : 'classpath:ssl/server-keystore.jks'
+    "key-store-password" : 'password'
+    "key-password" : 'password'
+    "client-auth" : 'need'
+    "trust-store" : 'classpath:ssl/server-truststore.jks'
+    "trust-store-password" : 'password'
