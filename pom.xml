@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>dynamic-cert-ssl-server</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Example rest server for dynamic selected certificate to ssl connection</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
