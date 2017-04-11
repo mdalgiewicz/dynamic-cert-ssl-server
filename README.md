@@ -1,5 +1,17 @@
-# dynamic-cert-ssl-server
-Inicjalizacja
+# Przykład serwera SSL z wykorzystaniem REST i SpringBoot
+
+### Frameworki i biblioteki
+* JDK 8
+* SpringBoot v.1.5.2
+* Maven
+* Lombok
+
+### O projekcie
+* Prosta implementacja serwera wykorzystującego komunikację HTTPS.
+* Keystore/Truststore oparty o providera typu JSK.
+* Truststore zawiera kilka certyfikatów wykorzystywanych przez [klienta](https://github.com/dalgim/dynamic-cert-ssl-client) usługi (Klient zaimplementowany z założeniem dynamicznego wybierania certyfikatu połącznie SSL).
+
+#### Inicjalizacja Keystore oraz Truststore - krok po kroku
 
 keytool -genkeypair -alias serverkey -keyalg RSA -keypass password -keystore server-keystore.jks -storepass password
 keytool -exportcert -alias serverkey -file server-public.cer -keystore server-keystore.jks -storepass password
