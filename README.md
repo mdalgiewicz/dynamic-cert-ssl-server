@@ -1,8 +1,8 @@
-# Simple REST service witch SSL (JKS) & SpringBoot dedicated to dynamic client certificate selection
+# Simple REST service with SSL (JKS) & SpringBoot dedicated to dynamic client certificate selection
 
 ### Choices
 * JDK 8
-* SpringBoot v.1.5.2
+* SpringBoot v1.5.2
 * SSL based on Java Keystore
 
 ### About
